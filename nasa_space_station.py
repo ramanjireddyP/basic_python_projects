@@ -1,14 +1,7 @@
 # Import the requests library
 import requests
-
-# Print header
 print("ISS Location Tracker")
-
-
-
 url = "http://api.open-notify.org/iss-now.json"
-
-
 print("Fetching current ISS location...\n")
 response = requests.get(url)
 data = response.json()
